@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('final.csv')
+df = pd.read_csv('/content/c-142/final.csv')
 df = df[df['soup'].notna()]
 
 count = CountVectorizer(stop_words='english')
