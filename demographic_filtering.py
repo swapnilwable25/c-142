@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('final.csv')
+df = pd.read_csv('/content/c-142/final.csv')
 
 C = df['vote_average'].mean()
 m = df['vote_count'].quantile(0.9)
